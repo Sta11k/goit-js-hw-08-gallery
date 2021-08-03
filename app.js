@@ -64,35 +64,3 @@ export const galleryItems = [
   },
 ];
 
-
-// const galleryRef = document.querySelector('.js-gallery');
-// const lightboxRef = document.querySelector('.js-lightbox');
-// const lightboxOverlayRef = document.querySelector('lightbox__overlay');
-// const lightboxContentRef = document.querySelector('lightbox__content');
-// const lightboxImageRef = document.querySelector('lightbox__image');
-
-// function creatGallery() {
-//     const markup = galleryItems.map(({ preview, original, description }) => {
-//       return `<li class="gallery__item">
-//   <a class="gallery__link" href="${original}">
-//     <img
-//       class="gallery__image"
-//       src="${preview}"
-//       data-source="${original}"
-//       alt="${description}"
-//       width="340"
-//     />
-//   </a>
-// </li>`
-//     ;})
-//     .join('');
-//     return markup;
-
-// };
-// console.log(creatGallery);
-// // galleryItems();
-
-// const galleryMarkup = creatGallery(galleryItems);
-// console.log(galleryMarkup);
-// galleryRef.insertAdjacentHTML('beforeend', galleryMarkup);
-
