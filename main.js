@@ -49,24 +49,24 @@ function onOpenModal(e) {
 }
 
 function onCloseModal(e) {
-  if (e.target===e.currentTarget){
+ 
     lightboxRef.classList.remove('is-open');
     lightboxImageRef.removeAttribute('src');
     lightboxImageRef.removeAttribute('alt');
-  }
+  
 };
 
 
 
 function onCloseOverlay(e) {
- onCloseModal(e)
+  if (e.target === e.currentTarget) {
+    onCloseModal(e)
+  }
 };
  
 document.addEventListener("keyup", function(e){
 if ( e.isComposing || e.keyCode === 27 ) {
-   lightboxRef.classList.remove('is-open');
-    lightboxImageRef.removeAttribute('src');
-    lightboxImageRef.removeAttribute('alt');
+   onCloseModal(e)
 } 
   return
 });
