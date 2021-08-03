@@ -63,7 +63,7 @@ function onCloseOverlay(e) {
 };
  
 document.addEventListener("keyup", function(e){
-if (27 === e.isComposing || e.keyCode ) {
+if ( e.isComposing || e.keyCode === 27 ) {
    lightboxRef.classList.remove('is-open');
     lightboxImageRef.removeAttribute('src');
     lightboxImageRef.removeAttribute('alt');
